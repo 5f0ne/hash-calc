@@ -1,0 +1,16 @@
+##############################################################################################
+
+Hash Calc by 5f0
+Calculates MD5 and SHA256 hashes for a given file
+
+Current working directory: /path/to/hash_calc
+        Investigated file: test.txt
+
+                 MD5 Hash: 265e08df10ed62d756e5e0bb6fadd69c
+              SHA256 Hash: 1675aa3766017a42980e686132eff094ba789bc3dc44de3e53f2fb05a7a513ff
+
+                 Datetime: 01/01/1970 10:20:30
+
+##############################################################################################
+
+Execution Time: 0.003022 sec
