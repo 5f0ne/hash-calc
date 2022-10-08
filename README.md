@@ -22,12 +22,19 @@ Calculates MD5 and SHA256 hashes for a given file
 ```python
 from hash_calc.HashCalc import HashCalc
 
+# 1.) Hash a file
 pathToFile = "/path/to/file/test.txt
 
 hashCalc = HashCalc(pathToFile)
 
 print(hashCalc.md5)
 print(hashCalc.sha256)
+
+# 2.) Hash bytes
+h = HashCalc.fromBytes(b"\x01\x02\x03")
+
+print(h.sha256)
+print(h.md5)
 
 ```
 

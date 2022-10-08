@@ -1,11 +1,12 @@
 import hashlib
 
 class HashCalc():
-    def __init__(self, path) -> None:
+    def __init__(self, path="") -> None:
         self.path = path
         self.md5 = "-"
         self.sha256 = "-"
-        self.__calculateFileHash()
+        if(path != ""):
+            self.__calculateFileHash()
             
     def __calculateFileHash(self):
 
@@ -22,3 +23,11 @@ class HashCalc():
 
         self.sha256 = sha256.hexdigest()
         self.md5 = md5.hexdigest()
+
+    def fromBytes(bytes_):
+        h = HashCalc()
+
+        h.sha256 = hashlib.sha256(bytes_).hexdigest()
+        h.md5 = hashlib.md5(bytes_).hexdigest()
+
+        return h

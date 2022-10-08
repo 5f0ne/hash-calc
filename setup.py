@@ -5,10 +5,10 @@ with open("README.md", "r") as r:
 
 setup(
     name="hash_calc",            
-    version="1.0.0",
+    version="1.1.0",
     author="5f0",
     url="https://github.com/5f0ne/hash-calc",
-    description="Calculates MD5 and SHA256 hashes for a given file",
+    description="Calculates MD5 and SHA256 hashes for a given file or bytes",
     classifiers=[
         "Operating System :: OS Independent ",
         "Programming Language :: Python :: 3 ",
